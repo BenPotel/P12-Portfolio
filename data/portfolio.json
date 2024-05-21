@@ -1,0 +1,31 @@
+[
+    
+    {
+        "image": "Booki.webp",
+        "title": "Booki",
+        "text": "Conception d'un site depuis une maquette Figma. Utilisation de Flexbox, mise en place de la partie responsive, validation W3C",
+        "link": "https://github.com/BenPotel/P3-Booki",
+        "link2" : "https://benpotel.github.io/P3-Booki/index.html",
+        "alt": "Image de couverture du site Booki"
+    },
+    {
+        "image": "724-Events.webp",
+        "title": "724 events",
+        "text": "Tests manuels/exploratoires afin de détecter des anomalies sur un site avant la mise en production, déroulé et mise à jour d'un cahier de recettes, bilan de campagne de test ",
+        "alt":"Image de couverture du site 724 Events"
+    },
+       {
+        "image": "Sophie-Bluel.webp",
+        "title": "Sophie Bluel",
+        "text": "Site portfolio mis en place intégralement en javascript. Manipulation du dom, intégration de modales dynamiques. De nombreux appels API sont gérés que ce soit pour la connexion, l'affichage des projets, ou bien l'ajout de projets via la modale",
+        "link": "https://github.com/BenPotel/P7-SophieBluel_Portfolio",
+        "alt":"Image de couverture du site 724 Events"
+    },
+    {
+        "image": "image3.webp",
+        "title": "Kasa",
+        "text": "Site de location Immobilière complétement mis à jour avec React. Ajout d'un carrousel, de collapses afin de dynamiser et moderniser le site",
+        "link": "https://github.com/BenPotel/P8-Kasa",
+        "alt": "Image de couverture du site Kasa"
+    }
+]
