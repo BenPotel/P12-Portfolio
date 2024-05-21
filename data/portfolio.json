@@ -19,7 +19,7 @@
         "title": "Sophie Bluel",
         "text": "Site portfolio mis en place intégralement en javascript. Manipulation du dom, intégration de modales dynamiques. De nombreux appels API sont gérés que ce soit pour la connexion, l'affichage des projets, ou bien l'ajout de projets via la modale",
         "link": "https://github.com/BenPotel/P7-SophieBluel_Portfolio",
-        "alt":"Image de couverture du site 724 Events"
+        "alt":"Image de couverture du site de Sophie Bluel"
     },
     {
         "image": "image3.webp",
