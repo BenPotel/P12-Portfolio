@@ -59,6 +59,7 @@ function createSkillsFromJSON() {
       });
     });
 }
+
 // Function to dynamically create HTML elements from the JSON file
 function createPortfolioFromJSON() {
   const container = document.querySelector("#portfolio .container");
@@ -77,7 +78,7 @@ function createPortfolioFromJSON() {
                     <div class="card portfolioContent">
                     <img class="card-img-top" src="images/${item.image}" alt="${
           item.alt
-        } style="width:100%">
+        }" style="width:100%">
                     <div class="card-body">
                         <h3 class="card-title">${item.title}</h3>
                         <p class="card-text">${item.text}</p>
