@@ -16,6 +16,21 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Style for back-to-top button */
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    display: none;
+    z-index: 999;
+    background-color: var(--navbar-bg);
+    border: 1px solid var(--navbar-text)
+}
+
+#back-to-top:hover {
+    background-color: var(--navbar-text-hover);
+}
+
 #home,
 #about,
 #skills,
@@ -162,11 +177,11 @@ body {
 
 .contactColumn i {
     color: #198754;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 .contactColumn h3 {
-    margin-top: 0.5rem;
+    margin: 0 0.5rem;
     font-size: 1.5rem;
 }
 

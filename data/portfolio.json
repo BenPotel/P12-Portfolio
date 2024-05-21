@@ -22,10 +22,23 @@
         "alt":"Image de couverture du site de Sophie Bluel"
     },
     {
-        "image": "image3.webp",
+        "image": "Kasa.webp",
         "title": "Kasa",
         "text": "Site de location Immobilière complétement mis à jour avec React. Ajout d'un carrousel, de collapses afin de dynamiser et moderniser le site",
         "link": "https://github.com/BenPotel/P8-Kasa",
         "alt": "Image de couverture du site Kasa"
+    },
+    {
+        "image": "EcoBlissBath.webp",
+        "title": "EcoBlissBath",
+        "text": "Automatisation de tests pour une boutique en ligne. Suite à un premier bilan de campagne, mise en place et rédaction de scénarios automatisés avec Cypress puis rédaction du bilan de campagne",
+        "link": "https://github.com/BenPotel/P10-Eco-Bliss-Bath",
+        "alt": "Image de couverture du site EcoBlissBath"
+    },
+     {
+        "image": "Tomsen.webp",
+        "title": "Tomsen",
+        "text": "Conception d'une stratégie de test. <br> Suite à l'analyse de la maquette et des spécifications fonctionnelles du projet,rédaction de la revue des exigences, conception de la stratégie de test et du cahier de recettes.",
+        "alt": "Image de couverture du site Tomsen"
     }
 ]

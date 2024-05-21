@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>Portfolio Benjamin Potel</title>
+    <title>Benjamin Potel - Testeur Logiciel</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio Testeur QA de Benjamin Potel.">
@@ -47,7 +47,7 @@
     <!-- Main Banner -->
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-5" tabindex="0" aria-label="À propos de moi">
         <div class="title_position">
             <h1 class="display-4">Testeur Logiciel junior</h1>
         </div>
@@ -72,7 +72,8 @@
                             passionné par la
                             technologie et animé par une curiosité naturelle qui m'a conduit vers le test
                             logiciel.<br><br>
-                            Axé sur le JavaScript et React, la formation m'a permis d'acquérir des compétences solides
+                            Axée sur le JavaScript et React côté développement, la formation m'a permis d'acquérir des
+                            compétences solides
                             en création de sites
                             web interactifs et
                             performants, et l'analyse de leur fonctionnement.<br><br>
@@ -90,7 +91,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-5 bg-light">
+    <section id="skills" class="py-5 bg-light" tabindex="0" aria-label="Mes compétences">
         <div class="container">
             <h2 class="text-center mb-4">Mes compétences</h2>
             <div class="row" id="skills-content"></div>
@@ -98,7 +99,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="py-5">
+    <section id="portfolio" class="py-5" tabindex="0" aria-label="Mes projets">
         <div class="container">
             <h2 class="text-center mb-4">Mes projets</h2>
             <div class="row" id="portfolio-content"></div>
@@ -106,29 +107,41 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section id="contact" class="py-5 bg-light" tabindex="0" aria-label="Contactez-moi">
         <div class="container">
             <h2 class="text-center mb-4">Contactez-moi</h2>
             <div class="row">
                 <div class="col-lg-4 text-center mb-4">
-                    <i class="fas fa-phone fa-4x text-success mb-3"></i>
                     <h3>Téléphone</h3>
-                    <p>06-06-06-06-06</p>
+                    <a href="tel:+33770054102" aria-label="Appeler le numéro +33-7-70-05-41-02">
+                        <i class="fas fa-phone fa-4x text-success mb-3"></i></a>
+
+                    <p>+33.7.70.05.41.02</p>
+                </div>
+
+                <div class="col-lg-4 text-center mb-4">
+                    <h3>E-mail</h3>
+                    <a href="mailto:Potel.benjamin@proton.me"
+                        aria-label="Envoyer un email à Potel.benjamin@proton.me"><i
+                            class="fas fa-envelope fa-4x text-success mb-3"></i></a>
+
+                    <p>Potel.benjamin@proton.me</p>
                 </div>
                 <div class="col-lg-4 text-center mb-4">
-                    <i class="fas fa-envelope fa-4x text-success mb-3"></i>
-                    <h3>Adresse email</h3>
-                    <p>prénom.nom@gmail.com</p>
-                </div>
-                <div class="col-lg-4 text-center mb-4">
-                    <i class="fab fa-linkedin fa-4x text-success mb-3"></i>
                     <h3>LinkedIn</h3>
-                    <p>LinkedIn Name</p>
+                    <a href="https://www.linkedin.com/in/benjamin-potel-66a474143/" target="_blank"
+                        aria-label="Visiter la page LinkedIn de Benjamin Potel"><i
+                            class="fab fa-linkedin fa-4x text-success mb-3"></i></a>
+                    <p>Benjamin Potel</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <a href="#" id="back-to-top" class="btn btn-success btn-lg back-to-top" role="button" title="Retour en haut"
+        data-bs-toggle="tooltip" data-bs-placement="left">
+        <i class="fas fa-chevron-up"></i>
+    </a>
     <!-- Load JavaScript after loading all HTML content -->
     <script src="script/script.js"></script>
 </body>
