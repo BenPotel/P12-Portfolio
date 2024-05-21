@@ -62,13 +62,15 @@ body {
 .navbar-brand,
 .navbar-dark .navbar-nav .nav-link {
     color: var(--navbar-text) !important;
-
+    transition: color 0.3s, text-shadow 0.3s;
+    /* Add transition for color and text shadow */
 }
 
+.navbar-brand:hover,
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: var(--navbar-text-hover);
-    text-decoration: underline;
-
+    color: var(--navbar-text-hover) !important;
+    /* Change text color on hover */
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
 }
 
 /* About Section */
@@ -82,10 +84,11 @@ body {
 /* Skills */
 .skillsText.card {
     height: 350px;
-    cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     background-color: var(--primary-bg);
     color: var(--primary-text);
+    border-radius: 60px;
+    border: 1px solid;
 }
 
 .skillsText img {
@@ -116,8 +119,8 @@ body {
 }
 
 .skillsText:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(0, 128, 0, 0.3);
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
 }
 
 /* Portfolio */
@@ -131,6 +134,8 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
     background-color: var(--primary-bg);
     color: var(--primary-text);
+    border-radius: 60px;
+    border: 1px solid;
 }
 
 .btn {
@@ -141,11 +146,12 @@ body {
     height: 200px;
     width: 100%;
     object-fit: cover;
+    border-radius: 60px 60px 0px 0px;
 }
 
 .portfolioContent:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(0, 128, 0, 0.3);
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
 }
 
 /* Contact */
