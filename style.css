@@ -28,15 +28,6 @@ body {
     color: var(--primary-text);
 }
 
-#home {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--card-hover) !important;
-}
-
 #home h1,
 #home p {
     color: var(--primary-text);
@@ -74,6 +65,12 @@ body {
 }
 
 /* About Section */
+
+.title_position h1 {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
 .imageAboutPage {
     width: 300px;
     height: 300px;
