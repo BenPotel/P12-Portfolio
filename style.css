@@ -188,3 +188,11 @@ body {
 .contactColumn p {
     margin: 0;
 }
+
+/* Footer */
+
+
+footer {
+    text-align: center;
+    margin: 1rem;
+}
