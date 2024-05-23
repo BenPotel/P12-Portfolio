@@ -1,13 +1,12 @@
 /******* GENERAL *******/
 :root {
-    --primary-bg: #0B3D17;
-    --primary-text: #d4af37;
+    --primary-bg: #add8e6;
+    --primary-text: #334850;
     --secondary-text: #666;
-    --card-hover: #0B3D17;
-    --navbar-bg: #012e0d;
-    --navbar-text: #d4af37;
+    --navbar-bg: #2F5869;
+    --navbar-text: #add8e6;
     --navbar-text-hover: #e3b319;
-
+    --navbar-text-scroll: #0B3D17
 }
 
 body {
@@ -61,22 +60,35 @@ body {
 }
 
 /* Navbar scroll effect */
-.navbar.navbar-expand-lg.fixed-top.navbar-dark.bg-dark {
-    background-color: var(--navbar-bg) !important;
-}
+
 
 .navbar-brand,
-.navbar-dark .navbar-nav .nav-link {
+.navbar-nav .nav-link {
     color: var(--navbar-text) !important;
-    transition: color 0.3s, text-shadow 0.3s;
-    /* Add transition for color and text shadow */
+    /* Texte par défaut */
+    transition: color 0.6s;
 }
 
 .navbar-brand:hover,
-.navbar-dark .navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover {
     color: var(--navbar-text-hover) !important;
-    /* Change text color on hover */
-    text-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+    /* Texte au survol */
+}
+
+.scrolled {
+    background-color: #e3b319;
+}
+
+.scrolled .navbar-brand,
+.scrolled .navbar-nav .nav-link {
+    color: #2f5869 !important;
+    /* Couleur du texte au scroll */
+}
+
+.scrolled .navbar-brand:hover,
+.scrolled .navbar-nav .nav-link:hover {
+    color: #0d47a1 !important;
+    box-shadow: 20px (rgba(0, 0, 0, 0.5));
 }
 
 /* About Section */
@@ -91,6 +103,10 @@ body {
     height: 300px;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.img-fluid {
+    max-width: 300px;
 }
 
 /* Skills */
@@ -126,10 +142,6 @@ body {
     color: var(--primary-text);
 }
 
-.card:hover .skillsIcon {
-    color: var(--card-hover);
-}
-
 .skillsText:hover {
     transform: scale(1.03);
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
@@ -152,6 +164,13 @@ body {
 
 .btn {
     margin-bottom: 20px;
+    background-color: var(--navbar-bg);
+}
+
+
+
+.btn:hover {
+    background-color: var(--navbar-text-hover);
 }
 
 .portfolioContent img {
@@ -175,19 +194,17 @@ body {
     color: var(--primary-text);
 }
 
-.contactColumn i {
-    color: #198754;
-    margin-bottom: 35px;
+.col-lg-4 i {
+    color: var(--navbar-bg);
+
 }
 
-.contactColumn h3 {
-    margin: 0 0.5rem;
+.col-lg-4 h3 {
+    margin: 1rem 0.5rem;
     font-size: 1.5rem;
 }
 
-.contactColumn p {
-    margin: 0;
-}
+
 
 /* Footer */
 
@@ -195,4 +212,5 @@ body {
 footer {
     text-align: center;
     margin: 1rem;
+    color: var(--navbar-text);
 }
