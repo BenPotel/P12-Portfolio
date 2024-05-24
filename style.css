@@ -65,14 +65,12 @@ body {
 .navbar-brand,
 .navbar-nav .nav-link {
     color: var(--navbar-text) !important;
-    /* Texte par défaut */
     transition: color 0.6s;
 }
 
 .navbar-brand:hover,
 .navbar-nav .nav-link:hover {
     color: var(--navbar-text-hover) !important;
-    /* Texte au survol */
 }
 
 .scrolled {
@@ -81,14 +79,48 @@ body {
 
 .scrolled .navbar-brand,
 .scrolled .navbar-nav .nav-link {
-    color: #2f5869 !important;
-    /* Couleur du texte au scroll */
+    color: var(--navbar-bg) !important;
+
 }
 
 .scrolled .navbar-brand:hover,
 .scrolled .navbar-nav .nav-link:hover {
     color: #0d47a1 !important;
     box-shadow: 20px (rgba(0, 0, 0, 0.5));
+}
+
+.navbar-toggler {
+    color: var(--navbar-text);
+    border-color: var(--navbar-text);
+    background-color: transparent;
+
+}
+
+
+/* Ajustements pour les petites tailles d'écran */
+@media (max-width: 992px) {
+    .navbar {
+        background-color: var(--navbar-bg);
+
+    }
+
+    .scrolled {
+        background-color: var(--navbar-text-hover);
+        /* Couleur de fond au scroll pour petites tailles d'écran */
+    }
+
+    .scrolled .navbar-toggler {
+        color: var(--navbar-bg);
+        /* Couleur du texte au scroll pour le bouton de navigation */
+        border-color: var(--navbar-bg);
+        /* Bordure du bouton au scroll */
+
+    }
+
+
+    .scrolled .navbar-toggler .navbar-toggler-icon {
+        color: var(--navbar-bg)
+    }
 }
 
 /* About Section */
@@ -165,8 +197,14 @@ body {
 .btn {
     margin-bottom: 20px;
     background-color: var(--navbar-bg);
+    border: none;
 }
 
+.btn-success:focus,
+.btn-success:active {
+    background-color: #2f5869;
+    box-shadow: 0 0 0 0.2rem rgba(227, 179, 25, 0.5)
+}
 
 
 .btn:hover {

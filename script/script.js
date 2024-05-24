@@ -121,6 +121,44 @@ window.addEventListener("scroll", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.querySelector(".navbar");
+  const togglerIcon = document.querySelector(
+    ".navbar-toggler .navbar-toggler-icon"
+  );
+
+  function updateTogglerIcon() {
+    const navbarTextColor =
+      getComputedStyle(document.documentElement)
+        .getPropertyValue("--navbar-text")
+        .trim() || "#000000";
+    const encodedColor = encodeURIComponent(navbarTextColor);
+
+    togglerIcon.style.backgroundImage = `url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='${encodedColor}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")`;
+  }
+
+  function updateTogglerIconScrolled() {
+    const scrolledColor = "#2f5869"; // couleur définie pour .scrolled
+    const encodedColor = encodeURIComponent(scrolledColor);
+
+    togglerIcon.style.backgroundImage = `url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='${encodedColor}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")`;
+  }
+
+  function handleScroll() {
+    if (window.scrollY > 20) {
+      // ajustez la valeur selon vos besoins
+      navbar.classList.add("scrolled");
+      updateTogglerIconScrolled();
+    } else {
+      navbar.classList.remove("scrolled");
+      updateTogglerIcon();
+    }
+  }
+
+  updateTogglerIcon(); // Initial update
+  window.addEventListener("scroll", handleScroll);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   var backToTopButton = document.getElementById("back-to-top");
 
   window.addEventListener("scroll", function () {
@@ -136,6 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
+
 // Call the functions to execute the code
 handleNavbarScroll();
 handleNavbarCollapse();
