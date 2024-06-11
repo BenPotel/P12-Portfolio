@@ -237,6 +237,10 @@ body {
 
 }
 
+.col-lg-4 i:hover {
+    color: var(--navbar-text-hover)
+}
+
 .col-lg-4 h3 {
     margin: 1rem 0.5rem;
     font-size: 1.5rem;
