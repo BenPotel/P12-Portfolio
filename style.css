@@ -97,7 +97,7 @@ body {
 }
 
 
-/* Ajustements pour les petites tailles d'écran */
+
 @media (max-width: 992px) {
     .navbar {
         background-color: var(--navbar-bg);
@@ -106,14 +106,14 @@ body {
 
     .scrolled {
         background-color: var(--navbar-text-hover);
-        /* Couleur de fond au scroll pour petites tailles d'écran */
+
     }
 
     .scrolled .navbar-toggler {
         color: var(--navbar-bg);
-        /* Couleur du texte au scroll pour le bouton de navigation */
+
         border-color: var(--navbar-bg);
-        /* Bordure du bouton au scroll */
+
 
     }
 
